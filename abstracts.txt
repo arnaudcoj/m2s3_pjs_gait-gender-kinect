@@ -15,4 +15,18 @@ Trouvent des différences "évidentes"
 Meilleur résultat : point de vue oblique en face
 Pire : 0° et 180°
 
+depthiinformationinhumangaitanalysis
+>Depth Information in Human Gait Analysis: An Experimental Study on Gender Recognition
+>R.Borràs, À.Lapedriza, L.Igual
+Utilisent une base de 53 personnes marchant dans plusieurs directions filmé avec la caméra de profondeur de la kinect pour reconnaître le genre d'une personne et son âge.
+
+genderclassificationwithvisualanddepthimages
+>Gender classification with visual and depth images
+> Yannick van den Hurk
+> veut savoir si il est possible d'utiliser la kinect pour reconnaitre le genre d'une personne. Il arrive finalement à des taux de plus de 90% de réussite.
+
+real-timefull-bodyhumangenderrecognition
+> Real-Time Full-Body Human Gender Recognition in (RGB)-D Data
+> T.Lnder, S.Wehner, K.O.Arras
+> Reconnaissance de genre avec les images RGB-D de kinect. Ils utilisent des points 3D pour detecter le genre, ils obtiennet 91% de réussite et 87 quand les personnes marchent.
 

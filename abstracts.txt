@@ -15,4 +15,15 @@ Trouvent des différences "évidentes"
 Meilleur résultat : point de vue oblique en face
 Pire : 0° et 180°
 
+UWSMPH_Gender_differences_in_walking_and_running
+>Gender differences in walking and running on level and inclined surfaces
+>Elizabeth S. Chumanov, Cara Wall-Scheffler, Bryan C. Heiderscheit *
+>University of Wisconsin School of Medicine and Public Health, Department of Orthopedics and Rehabilitation
+34 volontaires ont marché à des vitesses et démarches différentes et ont été enregistrés avec de l'electromyographie
+Les femmes ont une démarche différente (plus de mouvements "non-sagittal")
 
+JWH&GBM_Gender_Differences_during _Walking_Stereotypes
+>Gender Differences in Pelvic Motions and Center of Mass Displacement during Walking: Stereotypes Quantified
+>LYNNELLE K. SMITH, JENNIFER L. LELAS, M.S., and D. CASEY KERRIGAN, M.D., M.S.
+>JOURNAL OF WOMEN’S HEALTH & GENDER-BASED MEDICINE
+Résultat : trouvé que femmes avaient une plus grande "pelvic obliquity" et moins de "COM displacement" que les hommes. Mais sait pas si physio ou social ou quoi. Apparement moins fatigant comme posture mais fait + mal aux lombaires.

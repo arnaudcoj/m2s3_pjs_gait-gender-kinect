@@ -4,7 +4,7 @@ MIT_Gait_Analysis_for_Recognition_and_Classification
 >Gait Analysis for Recognition and Classification
 >L. Lee, W. E. L. Grimson
 >MIT Artificial Intelligence Lab
-Présentent une méthode de représentation de la démarche. 
+Présentent une méthode de représentation de la démarche.
 Ont trouvé une distinction dans la démarche entre les genres.
 
 IRIIPL_Investigating_Gait_Based_ Gender_Classification
@@ -41,14 +41,28 @@ IEEE_Combining_Spatial_and_Temporal_Information
 
 Springer_Gender_Classification_in_Human_Gait
 >Gender Classification in Human Gait Using Support Vector Machine
->Jang-Hee Yoo1, Doosung Hwang2, and Mark S. Nixon3
+>Jang-Hee Yoo, Doosung Hwang, and Mark S. Nixon
 >Springer
 Ont réussi à créer un système automatique qui classifie les genres à partir des contours du corps, de la démarche, de l'analyse de mouvement. 96% de réussite
 
-Temporal and spatial factors in gait perception that influence gender recognition
-Catharine D.Barclay, James E. Cutting and Lynn T. Kozlowski
-Perception & Psychophysics - 1978
+P&P_factors_in_gait_influence_gender_recognition
+>Temporal and spatial factors in gait perception that influence gender recognition
+>Catharine D.Barclay, James E. Cutting and Lynn T. Kozlowski
+>Perception & Psychophysics - 1978
 Concluent que les mouvements des épaules et des hanches permettent de distinguer le genre d'une personne qui marche
+
+IEEE_Gait_Components_and_Their_Application_to_Gender_Recognition
+>Gait Components and Their Application to Gender Recognition
+>Xuelong Li, Senior Member, IEEE, Stephen J. Maybank, Senior Member, IEEE, Shuicheng Yan, Member, IEEE, Dacheng Tao, Member, IEEE, and Dong Xu, Member, IEEE
+>IEEE TRANSACTIONS ON SYSTEMS, MAN, AND CYBERNETICS—PART C: APPLICATIONS AND REVIEWS, VOL. 38, NO. 2, MARCH 2008
+Analyse les silhouettes pour déterminer le genre, mais pas d'analyse dans le temps, donc à creuser
+
+IEEE_Silhouette_Analysis-Based_Gait_Recognition_for_Human_Identification
+>Silhouette Analysis-Based Gait Recognition for Human Identification
+>Liang Wang, Tieniu Tan, Senior Member, IEEE, Huazhong Ning, and Weiming Hu
+>IEEE TRANSACTIONS ON PATTERN ANALYSIS AND MACHINE INTELLIGENCE, VOL. 25, NO. 12, DECEMBER 2003
+Détection et analyse des silhouette pendant la démarche pour la reconnaissance des personnes
+
 
 Kinect + gender
 =============
@@ -67,4 +81,33 @@ real-timefull-bodyhumangenderrecognition
 > T.Lnder, S.Wehner, K.O.Arras
 > Reconnaissance de genre avec les images RGB-D de kinect. Ils utilisent des points 3D pour detecter le genre, ils obtiennet 91% de réussite et 87 quand les personnes marchent.
 
+DSP_Gait-based_Gender_Recognition
+>Gait-based Gender Recognition using Pose Information for Real Time Applications
+>Dimitrios Kastaniotis, Ilias Theodorakopoulos, George Economou and Spiros Fotopoulos
+>DSP 2013
 
+
+Kinect + gait
+=============
+ResearchGate_Gait_Recognition_with_Kinect
+>Gait Recognition with Kinect
+>Johannes Preis, Moritz Kessel, Martin Werner, Claudia Linnhoff-Popien
+>ResearchGate
+Utilisent 13 données biométriques fournies par kinect pour détecter et reconnaitre la personne qui marche
+
+VRST_Real-time_Physical_Modelling_Microsoft_Kinect
+>Real-time Physical Modelling of Character Movements with Microsoft Kinect
+>Hubert P. H. Shum et Edmond S. L. Ho
+>VRST
+Proposent une méthode pour modéliser le mouvement d'un personnage avec la kinect
+
+IEEE_Real-Time_Posture_Reconstruction_for_Microsoft_Kinect
+>Real-Time Posture Reconstruction for Microsoft Kinect
+>Hubert P. H. Shum, Edmond S. L. Ho, Yang Jiang, and Shu Takagi
+>IEEE TRANSACTIONS ON CYBERNETIC
+Permet d'améliorer la reconnaissance de la posture quand une partie de la personne est occultée ou qu'il y a des artefacts
+
+à faire :
+bdd, année publi
+méthode squelette ou silhouettes
+mouvements ou pas mouvements

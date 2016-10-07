@@ -1,8 +1,9 @@
+Gait + gender
+=============
 MIT_Gait_Analysis_for_Recognition_and_Classification
 >Gait Analysis for Recognition and Classification
 >L. Lee, W. E. L. Grimson
 >MIT Artificial Intelligence Lab
-
 Présentent une méthode de représentation de la démarche. 
 Ont trouvé une distinction dans la démarche entre les genres.
 
@@ -28,6 +29,29 @@ JWH&GBM_Gender_Differences_during _Walking_Stereotypes
 >JOURNAL OF WOMEN’S HEALTH & GENDER-BASED MEDICINE
 Résultat : trouvé que femmes avaient une plus grande "pelvic obliquity" et moins de "COM displacement" que les hommes. Mais sait pas si physio ou social ou quoi. Apparement moins fatigant comme posture mais fait + mal aux lombaires.
 
+IEEE_Human_Identity_and_Gender_Recognition
+>Human Identity and Gender Recognition from Gait Sequences with Arbitrary Walking Directions
+>Jiwen Lu, Member, IEEE, Gang Wang, Member, IEEE, and Pierre Moulin, Fellow, IEEE
+Proposent une approche par reconstruction pour estimer le genre d'une personne qui marche dans des directions random.
+
+IEEE_Combining_Spatial_and_Temporal_Information
+>Combining Spatial and Temporal Information for Gait Based Gender Classification
+>Maodi Hu , Yunhong Wang , Zhaoxiang Zhang and Yiding Wang
+>IEEE
+
+Springer_Gender_Classification_in_Human_Gait
+>Gender Classification in Human Gait Using Support Vector Machine
+>Jang-Hee Yoo1, Doosung Hwang2, and Mark S. Nixon3
+>Springer
+Ont réussi à créer un système automatique qui classifie les genres à partir des contours du corps, de la démarche, de l'analyse de mouvement. 96% de réussite
+
+Temporal and spatial factors in gait perception that influence gender recognition
+Catharine D.Barclay, James E. Cutting and Lynn T. Kozlowski
+Perception & Psychophysics - 1978
+Concluent que les mouvements des épaules et des hanches permettent de distinguer le genre d'une personne qui marche
+
+Kinect + gender
+=============
 depthiinformationinhumangaitanalysis
 >Depth Information in Human Gait Analysis: An Experimental Study on Gender Recognition
 >R.Borràs, À.Lapedriza, L.Igual

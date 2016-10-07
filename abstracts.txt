@@ -1,0 +1,18 @@
+MIT_Gait_Analysis_for_Recognition_and_Classification
+>Gait Analysis for Recognition and Classification
+>L. Lee, W. E. L. Grimson
+>MIT Artificial Intelligence Lab
+
+Présentent une méthode de représentation de la démarche. 
+Ont trouvé une distinction dans la démarche entre les genres.
+
+IRIIPL_Investigating_Gait_Based_ Gender_Classification
+>Investigating the Separability of Features from Different Views for Gait Based Gender Classification
+>De Zhang and Yunhong Wang
+>Intelligent Recognition and Image Processing Laboratory, China
+Utilisent une DB avec des vidéos de gens qui marchent, sous 7 points de vue différents
+Trouvent des différences "évidentes"
+Meilleur résultat : point de vue oblique en face
+Pire : 0° et 180°
+
+

@@ -1,0 +1,112 @@
+\documentclass{pjsivi}
+
+
+\title{Titre du projet}
+\author{Nom des auteurs}
+\date{2015-2016}
+
+
+\begin{document}
+
+\maketitleivi % affiche la page de garde (voir commandes \title et \author pour paramétrer)
+
+
+\tableofcontents % affiche la table des matières
+
+
+\chapter*{Introduction} % l'étoile * évite de donner un numéro de chapitre à l'introduction 
+\addcontentsline{toc}{chapter}{Introduction} % même non numéroté, ce chapitre doit apparaitre dans la table des matières
+
+Texte pour l'introduction
+
+
+%--------------------------------------------------------------------------------------
+%--------------------------------------------------------------------------------------
+\chapter{Prise en main de \LaTeX} 
+
+
+\section{Installation}
+
+\subsection{Sous Linux}
+Nombreuses documentations disponibles sur internet pour
+l'installation des packages (voir package texlive; pour l'édition, geany suffit).
+
+\subsection{Sous Windows}
+
+\begin{itemize}
+\item Pour compiler les fichiers tex, installer Miktex \cite{Mikex}
+\item Pour écrire des documents Latex, installer TeXnicenter \cite{Texnicenter} (Freeware) ou WinEdt \cite{WinEdt} (Shareware).
+\end{itemize}
+
+\section{Compilation des documents}
+Pour compiler un document \LaTeX en pdf :
+
+\begin{itemize}
+\item Faire \verb#pdflatex rapport#
+\item Faire \verb#bibtex rapport# (génère la bibliographie)
+\item Refaire \verb#pdflatex rapport# (intègre la bibliographie)
+\item Vous pouvez bien sûr faire un \verb#Makefile# qui correspond ou utiliser l'éditeur s'il prévoit la compilation en pdf d'un document latex.
+\end{itemize}
+
+\section{Quelques commandes}
+\subsection{Insertion de figures}
+
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[height=4cm]{logoLille1}
+  \caption{Le logo de l'Université Lille 1.}
+  \label{fig:ustl}
+\end{figure}
+
+Logo de l'USTL (voir fig. \ref{fig:ustl})
+
+Mettre les images dans le répertoire \texttt{img}
+
+\subsection{Insertion d'équations}
+
+\begin{equation}
+\int_{t=a}^{t=b}f(t)\;dt = 0 \label{eq:temps}
+\end{equation}
+
+D'après l'équation \ref{eq:temps} ... (voir par exemple \url{https://fr.wikibooks.org/wiki/LaTeX/Mathématiques} pour la syntaxe de l'écriture des formules).
+
+\subsection{Insertion de code}
+
+Pour plus d'infos sur le package listings, consulter cette note de bas de page\footnote{
+\url{ftp://tug.ctan.org/pub/tex-archive/macros/latex/contrib/listings/listings.pdf}
+}
+
+
+\begin{lstlisting}[frame=trBL]
+#include <iostream>
+
+int main() {
+    std::cout << "Hello, world!\n";
+}
+\end{lstlisting}
+
+\subsection{Références et citations}
+
+\begin{itemize}
+\item Pour ajouter une référence : l'ajouter dans le fichier \verb#biblio.bib# (faire du copier coller avec les exemples qui s'y trouvent)
+\item Pour citer une référence : exemple \verb#\cite{goossens93}# (référence présente dans \verb#biblio.bib#) pour obtenir \cite{goossens93}
+\item {\bf Attention} : pour que les références et les citations apparaissent correctement dans le document, il faut exécuter \verb#bibtex# avant la compilation latex (sous geany : voir le menu \verb#build#)
+\end{itemize}
+
+\section{Doc \LaTeX}
+Faire des recherches sur Google ou consulter ce livre très complet
+\cite{goossens93}.
+
+\chapter*{Conclusion} 
+\addcontentsline{toc}{chapter}{Conclusion} % voir remarque de l'intro
+
+Texte pour la conclusion
+
+\bibliographystyle{unsrt} 
+\bibliography{biblio} % affiche la bibliographie (voir voir fichier biblio.bib pour les entrées; seules les références citées par la commande \cite{ } apparaitront
+
+\appendix  % on passe aux annexes : évite d'avoir le mot "Chapitre" qui apparait
+\chapter*{Annexe 1}
+\addcontentsline{toc}{chapter}{Annexe1} % voir remarque de l'intro
+
+\end{document}

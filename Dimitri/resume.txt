@@ -1,0 +1,35 @@
+pdf : IEEE_Real-Time_Posture_Reconstruction_for_Microsoft_Kinect
+
+Le problème soulevé dans ce rapport est celui des parties du corps mal reconnu par kinect ou les partie du corps caché par l'environnement.
+Ils proposent une nouvelle méthode pour reconstruire les mouvements à partir de postures incomplètes capturées par la kinect.
+L'algorithme va évaluer la réalisabilité d'un mouvement capturé par la caméra en recherchant dans une base de données des mouvements similaires réalisables.
+Ils ont testé la méthode sur des personnes jouant au basket ou se déplaçant dans une petite pièce.
+Ils obtiennent des résultats correctes quand une grange partie du corps et cachée.
+Le système peut être utilie pour des jeux multijoueurs car il permet de reconstruire les corps des joueurs cachés par d'autres joueurs.
+
+Bref, ce pdf ne va pas nous être utile pour la reconnaisance de genre.
+
+
+pdf : IEEE_Silhouette_Analysis-Based_Gait_Recognition_for_Human_identification
+
+Ce papier se concentre sur l'identification de personnes grâce à leur démarche.
+Premièrement, ils séparent, pour chaques images, le fond de la scène de la personne qui marche grâce à un algorithme de correspondance et de suivie de personnes.
+Ensuite, un algorithme d'analyse de compossantes principale est utilisé pour réduire les données nécessaire à l'analyse de la démarche.
+Enfin, une technique de classification est utilisé pour analyser la démarche de l'individu.
+Les résultats de l'algorithme sont encourageant et ses performances en termes de temps de calcul sont bonnes.
+
+Je ne pense pas que cette article nous sera utile car il s'interesse plus au suivie et à la reconnaisance d'une personne spécifique en utilisant sa démarche et sa silhouette qu'à l'analyse de la démarche.
+
+
+pdf : IRIIPL_Investigating_Gait_Based_Gender_Classification
+
+
+
+
+pdf : JWHGBM_Gender_Differences_during_Walking_Stereotypes
+
+
+
+
+pdf : Kviatkosky_Person_Identification_From_2015_CVPR_paper
+

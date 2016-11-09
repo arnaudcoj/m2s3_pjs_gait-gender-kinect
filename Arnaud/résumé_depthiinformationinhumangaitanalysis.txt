@@ -1,0 +1,36 @@
+Depth Information in Human Gait Analysis:An Experimental Study on Gender Recognition
+(Information de profondeur dans l'analyse de la démarche humaine : Une étude expérimentale sur la reconnaissance de genre)
+Springer-Verlag Berlin Heidelberg 2012
+
+Nouvelle base de données (DGait) acquise grâce à une Kinect. 53 sujets marchant dans différentes directions et de points de vues différents (11 vidéos par sujets).
+Vidéos triées par sujet, genre et age. Fournit les frame initiale et finale d'un cycle de marche.
+http://www.cvc.uab.es/DGaitDB/
+Analyse de démarche peut aussi donner l'age, l'ethnie, faisable à distance et/ou avec une faible résolution
+Capture en intérieur
+640x480 30fps
+depth resolution de quelques centimètres
+Simule le scénario d'une étude de démarche en magasin etc.
+53 sujets, 63H et 17F, caucasiens
+Kinect placée à 2m au dessus du sol. Circuit prédéfini, différents pdv.
+info en profondeur mais aussi en RGB pour recouper résultats
+
+Autres BDD:
+USF HumanID = 1870 séquences pour 122 personnes suivant un chemin elliptique (?) Extérieur, quelques variations (pointds de bue, chaussures différentes...)
+CASIA Gait Database = Dataset A, Dataset B (multiview) et C (infrarouge). B le plus complet, avec 124 sujets (93 H 31 F) sous 11pdv différents. Variantes aussi.
+IRIP Gait Database = intérieur, fond simple. 8 caméras à diférents angles. 60 sujets, 32H 28F
+Large-Scale Multi-View Gait Database = 168 sujets, 88H 80F 25 pdv mais tout pas public.
+sinon aussi Soton Large Database & Gergia Tech Database
+
+Font des expérimentations de classification de genres basés sur la démarche afin de prouver l'efficacité de la profondeur dans ce cas.
+Extraient les silhouettes 2D et une estimation du corps en 3D (grâce à la profondeur), testent la reconnaissance de genre avec un SVM (voir en dessous) avec fonction kernel basis (?)
+
+ça ça peut être cool pour reconnaitre le genre si on comprend comment ça marche :
+SVM ===============
+https://fr.wikipedia.org/wiki/Machine_%C3%A0_vecteurs_de_support
+http://www.svms.org/tutorials/Berwick2003.pdf
+https://www.analyticsvidhya.com/blog/2015/10/understaing-support-vector-machine-example-code/
+=================
+
+Donc ils s'en servent pour toutes les données 2D, toutes les données 3D, et la combinaison des 2. C'est la combinaison qui gagne avec 96 sujets bien classifiés (91 pour la 2D, 87 pour la 3D)
+
+en résumé, information de profondeur intéressante si combiné avec 2D, et une SVM peut être utilisée pour classifier

@@ -1,0 +1,5 @@
+Gender classification with visual and depth images
+Master Thesis – Y.N.L. van den Hurk – Tilburg University August 2012
+(Classification de genre à partir d'images et d'informations de profondeur)
+
+reconnaissance de visage, pas d'intérêt pour nous

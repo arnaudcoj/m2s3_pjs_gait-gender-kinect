@@ -1,0 +1,35 @@
+Gait-based Gender Recognition using Pose Information for Real Time Applications
+(Reconnaissance de genre basée sur la démarche utilisant des informations de pose pour applications temps réel)
+Dimitrios Kastaniotis, Ilias Theodorakopoulos, George Economou and Spiros Fotopoulos
+2013 IEEE
+
+proposent un système de reconaissance de genre peu coûteux basé sur le style de la marche qui se sert d'images de profondeur. Peut opérer en temps réel.
+
+BDD UPCVgait, 150 sequences de 15H et 15F par Kinect.
+Remarquent que la profondeur est intéressante car pas d'influence de l'éclairage
+utilisent la dynamique de mouvement de la démarche en extrayant les membres.
+
+leur état de l'art :
+  2 approches majeures : model-free et model-based
+  model-free:
+    segmente un corps, utilise la silhouette ou le contour des segments pour encoder les mouvemements sous la forme de template (?). Très efficace niveau calcul mais peu souple (changement de luminosité etc)
+  model-based:
+    squelette, modélisation des mouvemnts
+    plus cher en calcul mais plus fiable et plus robuste
+    permettent de récupérer des features statiques (taille d'un bras etc) et dynamique (vitesse d'un point etc.)
+
+Leur méthode:
+récupèrent des info sur le style de marche et l'encodent en des histogrammes normalisés
+représentation squelette 20 joints estimé avec la technique de Shotton (algo sdk kinect je crois)
+divisé en 2 parties:
+agreggation des informations de direction des membres dans un histogramme sous forme d'angles d'euler, (through skeletal primitives Euler angles voting)
+et concatenation+normalisation des histogrammes en un histogramme final donné au classifieur
+
+Utilisent un SVM non-linéaire avec noyau RBF pour la classification de genre.
+
+Plus efficace quand la personne analysée avait une séquence dans la phase d'apprentissage. Donc + intéressant pour la reconnaissance d'individus que pour un truc généraliste. Mais bon c'est un peu normal en même temps
+si j'ai bien compris 86% si personne pas dans l'apprentissage, 96% sinon
+
+Autres avantages:
+indépendant de l'angle de vue, nombre de frames (on a quand même besoin d'un minimum de frames), échelle, distance, vêtements, accessoires portés etc.
++ ne dépend pas d'une analyse exacte des cycles de démarche (dur à faire et coûteux en ressources)

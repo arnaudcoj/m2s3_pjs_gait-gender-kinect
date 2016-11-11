@@ -1,0 +1,38 @@
+Gait Components and Their Application to Gender Recognition
+Composants de la démarche et leurs applications dans la reconnaissance de genre
+MARCH 2008 IEEE TRANSACTIONS ON SYSTEMS, MAN, AND CYBERNETICS
+
+
+Les infos de démarche ont d'abord été utilisées en chirurgie et psychologie pour déceler des troubles physiques ou psychos quand démarche anormale
+
+beaucoup de variations correllées ou non : par exemple changement de surface de marche ou de chaussure peut provoquer changement de vitesse.
+Donc le contexte/environnement a une influence très forte qui peut gêner l'analyse comparé aux empreintes digitales ou analyses d'iris
+Mais en même temps, on a énormément d'information pouvant être extraite de la démarche. Pour ça c'est un gros challenge mais avec une grosse récompense à la clé.
+
+BDD : USF Gait Database
+85H et 37F
+sur pelouse, tous du même point de vue de profie
+
+Pas de profondeur.
+Se servent de la silhouette de profil pour reconnaitre le genre.
+Information obtenue de différentes parties de la silhouette.
+La silhouette humaine est coupée en 7 composantes : tête, bras, tronc, taille, jambe avant, jambe arrière, pieds.
+On parle de jambe avant/ arrière car on peut pas distinguer les deux de profil + leur position s'alterne
+Font la moyenne de toutes les images du cycle de marche. Puis la découpent. placent des points et tracent des lignes pour les connecter
+
+Utilisent un SVM linéaire
+
+démontrent que dans leur cas :
+-- reconaissance de personne
+La tête les bras, le tronc et la jambe arrière sont importants pour la reconnaissance de personne
+Si on rajoute la jambe avant on réduit le taux de reconnaissance
+Les pieds n'ont pas l'air importants dans la reconaissance
+L'inclusion de la taille réduit le taux de reconaissance quand l'échantillon n'étais pas dans la phase d'apprentissage ou quand porte une malette (?)
+-- reconaissance de genre
+démarche du tronc et de la jambe avant utiles pour la reconnaissance de genre
+démarche tête jambe arrière pieds pas utiles pour reconnaissance de genre
+démarche des bras et taille réduisent la reconnaissance des genre quand l'échantillon n'étais pas dans la phase d'apprentissage ou quand porte une malette (?)
+
+concluent que tellement de mouvements pour chaque parties du corps que c'est compliqué d'analyser la démarche mais on peut quand même en retirer plein d'infos.
+Efficaces pour reconnaissance de personnes mais aussi de genre.
+cependant leur méthode ignore la notion de temps

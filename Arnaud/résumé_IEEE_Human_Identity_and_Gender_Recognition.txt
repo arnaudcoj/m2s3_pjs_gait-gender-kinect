@@ -1,0 +1,35 @@
+Human Identity and Gender Recognition From Gait Sequences With Arbitrary Walking Directions
+(Reconnaissance de personne et de genre à partir de séquences de marche dans des directions arbitraires)
+IEEE TRANSACTIONS ON INFORMATION FORENSICS AND SECURITY, VOL. 9, NO. 1, JANUARY 2014
+
+reconnaissance de personne et de genre à partir de séquences de marches dans différentes directions.
+La plupart des méthodes nécessitent que la personne marche droit ou le long d'un chemin prédéfini, mais pas celle là. Dans la vraie vie les gens changent de vitesse/direction/etc. tout le temps
+travaillent sur la silhouette, en depth.
+récuperrent la silhouette humaine par soustraction de d'arrière plan, et la divisent en plusieurs clusters.
+calculent la moyenne de toutes les frames de chaque cluster ensuite.
+utilisent un SRML (sparse reconstruction
+based metric learning) pour obtenir une mesure de distance qui permettra de discriminer les différentes démarches
+
+L'analyse de la démarche est sensible aux différents points de vue, l'identification et la reconnaissance de genre à partir de démarches dans des directions différente peut donc être difficile.
+
+Pour étudier ce problème ils ont fait une nouvelle BDD avec des personnes qui marchent librement dans la scène, directions arbitraires et différentes en fonction du temps, en depth avec une Kinect.
+appelé ADSC-AWD (Advanced Digital Sciences Center-Arbitrary
+Walking Directions). Ont rendu le Dataset et les labels publics en ligne
+https://sites.google.com/site/adscawdgait/
+
+d'abord alignent les silhouettes entre toutes les images (car comme directions arbitraires, la personne ne peut pas vraiment être suivie)
+
+à chaque fois découpe la silhouette en clusters
+
+puis pour chaque cluster calculent une image moyenne de la démarche
+
+avant pour créer les clusters utilisaient k-means. Mais le nombre de clusters n'est pas connu à l'avance car les différences de poses et de points de vue sont inconnues. Utilisent la méthode de clustering AP (affinity propagation) pour obtenir les clusters sans spécifier le nombre de clusters voulus.
+
+Leur méthode SRML bat ses concurrents en terme de taux de reconnaissance. 98.0% de reconnaissance de genre.
+
+Cette approche échoue si le style de marche dans les séquences de test est vraiment différent de celle dans les séquences d'apprentissage. Car grandes différences pour les features C-AGI du même sujet (???)
+Considèrent extraire plus de features modal-based pour améliorer (??)
+
+BDD collectée en intérieur, mais l'approche pourrait aussi être utilisée en extérieur car seule compte la silhouette.
+
+Leur SRML pourrait être utilisée pour d'autres applications comme la reconnaissance de visage ou d'objets

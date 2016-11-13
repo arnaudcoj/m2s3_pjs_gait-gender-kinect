@@ -23,13 +23,25 @@ Je ne pense pas que cette article nous sera utile car il s'interesse plus au sui
 
 pdf : IRIIPL_Investigating_Gait_Based_Gender_Classification
 
+Dans ce papier, il mesure l'efficacité de différent angle de vue d'image pour reconnaitre le genre d'une personne.
+Une base de données contient des vidéos prise par 7 angles de vue différents de personne marchant.
+Ils font plusieurs expérience pour détecter le meilleur angle de vue pour la reconnaissance de genre.
+0 et 180 degré sont les pires angles de vue.
 
+Pas vraiment ce que nous recherchons. Ils ne détaillent pas la manière dont ils font la reconnaissance.
 
 
 pdf : JWHGBM_Gender_Differences_during_Walking_Stereotypes
 
+Cet article a pour but d'analyser la marche pour détecter les différences entre un homme et une femme au nieau de la marche. 
+D'après ce que j'ai compris, il utilise pas seulement une caméra mais il utilise des données physique de la personne.
 
+On pourra utiliser les résultats de cette recherche pour nous aider dans la nôtre.
 
 
 pdf : Kviatkosky_Person_Identification_From_2015_CVPR_paper
+
+Le but de cet article est de reconnaitre une personne grâce à ces gestes grâ à des actions prédéfini.
+
+Ca nous interesse pas, ça se concentre sur la reconnaissance d'une personnes grâce à un ensemble de gestes prédéfini.
 

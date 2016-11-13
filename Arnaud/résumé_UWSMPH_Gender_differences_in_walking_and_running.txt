@@ -1,0 +1,17 @@
+Gender differences in walking and running on level and inclined surfaces
+(Différences de genre pour la marche et la course sur des surfaces planes et inclinées)
+2008 Elsevier
+
+Le taux de problèmes/blessures des membres inférieurs est différent en fonction du genre. Cela pourrait être dû aux différences de démarches entre les genres.
+En particulier, l'augmentation des mouvements du non-sagittaux (j'imagine quand les mouvements se font pas d'avant en arrière -- plan sagittal --  mais sur les côtés ou de haut en bas -- plan frontal et transversal--) du pelvis et des hanches est mise en cause.
+Cherchent à trouver les différences de genre pour la démarche et l'activité musculaire en fonction de la vitesse et de l'inclinaison de la surface. Aussi déterminer si la morphologie des membres inférieurs contribue à ces différences.
+
+Pour ça ils ont demandé à 34 volontaires de marcher à 1.2, 1.5, 1.8 m/s et courir à 1.8, 2.7, 3.6 m/s, sur des surfaces inclinées de 0%, 10%, 15%.
+Il les ont filmés et ont fait des electromyographies des muscles du membre inférieur droit.
+Les angles des articulations et les activités musculaires ont été comparées en fonction des genres. Le pelvis et les segments des membres inférieurs ont aussi été mesurés et comparés.
+
+Ils ont trouvé que les femmes montraient une plus grande rotation des hanches et une plus grande adduction, et qu'ils avaient une plus grande activité du muscle grand glutéal (fessier) dans tous les cas.
+Des interactions significatives (vitesse-genre, inclinaison-genre) ont été trouvée pour le muscle moyen glutéal et le muscle vaste latéral (compose le quadricep).
+L'adduction des hanches durant la marche était modérement corrélée au ratio entre la largeur bi-trochantérique (largeur de hanche en gros) et la longueur de la jambe.
+
+Ils en concluent que les femmes montrent de plus grands mouvements non-sagittaux. Des études supplémentaires seraient nécessaires pour faire un lien avec les blessures et problèmes fonctionnels des membres inférieurs.

@@ -1,0 +1,17 @@
+ResearchGate_Gait_Recognition_with_Kinect :
+
+Ce document parle de la reconnaissance de démarche avec kinect. il explique que la démarche présente des avantages par rapport aux autres biométriques car elle permet des techniques de reconnaissance non intrusive. Autrement dit : aucun contact physique entre la personne et l'outil de mesure n'est necessaire. Cela est entre autre pratique de ce fait pour la suveillance.
+
+Il y est dit que pour la reconnaissance avec des cameras classiques la difficulté et de trouver les parametres caractéristiques pour l'identification. Avec Kinect et sa skeleton-detection and -tracking of people in realtime by an integrated depth camera, le problème peut être simplifié : 
+
+Using a simple set of features and testing three different classifiers, we observed promising results concern- ing person recognition, especially when using a Naive Bayes classifier.
+
+based on the skeleton provided by Mircosoft Kinect.
+
+We decided to use this skeletal data for recognition and did not use the depth- and color-images directly.
+
+Our system consists of three components: The first compo- nent records the skeletal information offered by Kinect which is then processed by the second component for feature ex- traction. Finally, we use the machine learning framework WEKA [5] to identify a person on the basis of previously recorded training data (see Figure 1).
+
+1R, a C4.5 decision tree and a Naive Bayes classifier.
+
+Ils font passer les gens devant la caméra

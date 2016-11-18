@@ -1,0 +1,11 @@
+Springer_Gender_Classification_in_Human_Gait :
+
+Ce document parle d'une technique pour classifier des genres à partir de données de démarche humaine. (SANS KINECT dans ce document)
+Cette technique se déroule en 3 étapes :
+	- Dans un premier temps, detection et extraction du corps humaine mobile à partir de séquences d'images.
+	- Extraction de la signature de demarche par les "joint angles" et les points du corps.
+	- Analyse du mouvement et extraction des propriétés pour la classification du genre dans les patterns de la démarche
+
+Utilisation de SVM
+
+Présente des résultats interessants
